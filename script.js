@@ -72,7 +72,7 @@ function marcarJogoDaVelha(botao) {
         document.getElementById('j9').disabled = true
 
         alert(mensagem)
-    } else if (j1 != " " && j2 != " " && j3 != " " && j4 != " " && j5 != " " && j6 != " " && j7 != " " && j8 != " " && houveVencedor == false) {
+    } else if (j1 != " " && j2 != " " && j3 != " " && j4 != " " && j5 != " " && j6 != " " && j7 != " " && j8 != " " && j9 != " " && houveVencedor == false) {
         mensagem = "Empate! Deu velha."
         alert(mensagem)
     }

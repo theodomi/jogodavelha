@@ -20,27 +20,35 @@
 </head>
 
 <body>
-    <h1>Jogo da velha</h1>
+    <center>
+        <h1>Jogo da velha</h1>
+        <div class="border">
+            <div>
+                <input type="button" value=" " id="j1" class="bttn-size padding" onclick="marcarJogoDaVelha('j1')">
+                <input type="button" value=" " id="j2" class="bttn-size padding margin-left"
+                    onclick="marcarJogoDaVelha('j2')">
+                <input type="button" value=" " id="j3" class="bttn-size padding margin-left"
+                    onclick="marcarJogoDaVelha('j3')">
+            </div>
 
-    <div>
-        <input type="button" value=" " id="j1" class="bttn-size" onclick="marcarJogoDaVelha('j1')">
-        <input type="button" value=" " id="j2" class="bttn-size" onclick="marcarJogoDaVelha('j2')">
-        <input type="button" value=" " id="j3" class="bttn-size" onclick="marcarJogoDaVelha('j3')">
-    </div>
-    <div>
-        <input type="button" value=" " id="j4" class="bttn-size" onclick="marcarJogoDaVelha('j4')">
-        <input type="button" value=" " id="j5" class="bttn-size" onclick="marcarJogoDaVelha('j5')">
-        <input type="button" value=" " id="j6" class="bttn-size" onclick="marcarJogoDaVelha('j6')">
-    </div>
-    <div>
-        <input type="button" value=" " id="j7" class="bttn-size" onclick="marcarJogoDaVelha('j7')">
-        <input type="button" value=" " id="j8" class="bttn-size" onclick="marcarJogoDaVelha('j8')">
-        <input type="button" value=" " id="j9" class="bttn-size" onclick="marcarJogoDaVelha('j9')">
-    </div>
+            <div>
+                <input type="button" value=" " id="j4" class="bttn-size padding" onclick="marcarJogoDaVelha('j4')">
+                <input type="button" value=" " id="j5" class="bttn-size padding margin-left"
+                    onclick="marcarJogoDaVelha('j5')">
+                <input type="button" value=" " id="j6" class="bttn-size padding margin-left"
+                    onclick="marcarJogoDaVelha('j6')">
+            </div>
 
-    <div>
-        <button value="Jogar de novo" id="play-again-bttn" onclick="jogarDeNovo()">Jogar De Novo</button>
-    </div>
+            <div>
+                <input type="button" value=" " id="j7" class="bttn-size" onclick="marcarJogoDaVelha('j7')">
+                <input type="button" value=" " id="j8" class="bttn-size margin-left" onclick="marcarJogoDaVelha('j8')">
+                <input type="button" value=" " id="j9" class="bttn-size margin-left" onclick="marcarJogoDaVelha('j9')">
+            </div>
+            <div>
+                <button value="Jogar de novo" id="play-again-bttn" onclick="jogarDeNovo()">Jogar De Novo</button>
+            </div>
+        </div>
+    </center>
 </body>
 
 </html>
