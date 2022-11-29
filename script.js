@@ -5,16 +5,13 @@ window.onload = function () {
 
 // identifica a vez/jogada de cada um (X e O)
 function marcarJogoDaVelha(botao) {
-    if (document.getElementById(botao).value == " ") {
-        if (jogada == "X") {
-            document.getElementById(botao).value = "X"
-            jogada = "O"
-        } else {
-            document.getElementById(botao).value = "O"
-            jogada = "X"
-        }
+    if (jogada == "X") {
+        document.getElementById(botao).value = "X"
+        jogada = "O"
+    } else {
+        document.getElementById(botao).value = "O"
+        jogada = "X"
     }
-
 
     // puxa todos os quadradinhos
     var j1 = document.getElementById('j1').value
@@ -76,22 +73,7 @@ function marcarJogoDaVelha(botao) {
 
         alert(mensagem)
     } else if (j1 != " " && j2 != " " && j3 != " " && j4 != " " && j5 != " " && j6 != " " && j7 != " " && j8 != " " && j9 != " " && houveVencedor == false) {
-        {
-            mensagem = "Empate! Deu velha."
-            alert(mensagem)
-        }
-
-        function jogarDeNovo() {
-            // zera os valores (deixa tudo em branco)
-            document.getElementById('j1').value = " "
-            document.getElementById('j2').value = " "
-            document.getElementById('j3').value = " "
-            document.getElementById('j4').value = " "
-            document.getElementById('j5').value = " "
-            document.getElementById('j6').value = " "
-            document.getElementById('j7').value = " "
-            document.getElementById('j8').value = " "
-            document.getElementById('j9').value = " "
-        }
+        mensagem = "Empate! Deu velha."
+        alert(mensagem)
     }
 }
