@@ -5,12 +5,14 @@ window.onload = function () {
 
 // identifica a vez/jogada de cada um (X e O)
 function marcarJogoDaVelha(botao) {
-    if (jogada == "X") {
-        document.getElementById(botao).value = "X"
-        jogada = "O"
-    } else {
-        document.getElementById(botao).value = "O"
-        jogada = "X"
+    if (botao == " ") {
+        if (jogada == "X") {
+            document.getElementById(botao).value = "X"
+            jogada = "O"
+        } else {
+            document.getElementById(botao).value = "O"
+            jogada = "X"
+        }
     }
 
     // puxa todos os quadradinhos
